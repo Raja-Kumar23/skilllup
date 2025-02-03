@@ -3,47 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raja Kumar | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Code Sutra</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        nav ul { display: flex; list-style-type: none; padding: 0; margin: 0; background-color: #333; }
+        nav li { padding: 14px 20px; }
+        nav a { color: white; text-decoration: none; }
+        #topic-list { margin-top: 20px; }
+        #question-list { margin-top: 20px; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Pawan Singh</h1>
-        <p>Web Developer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm passionate about web development and love creating user-friendly websites.</p>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#" id="c-lang">C</a></li>
+            <li><a href="#" id="java-lang">Java</a></li>
+        </ul>
+    </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Calculator Website</h3>
-            <p>A simple calculator built using HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>This personal portfolio showcases my skills and projects.</p>
-        </div>
-    </section>
+    <div id="topics">
+        <h2>Select a Topic</h2>
+        <ul id="topic-list"></ul>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:rajakumar@example.com">rajakumar@example.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Raja Kumar</p>
-    </footer>
+    <div id="questions">
+        <h3>Questions</h3>
+        <ul id="question-list"></ul>
+    </div>
 
     <script src="script.js"></script>
 </body>

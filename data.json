@@ -1,0 +1,38 @@
+{
+    "C": {
+        "Arrays": [
+            {
+                "question": "Reverse an Array",
+                "difficulty": "Easy",
+                "algorithm": "Use two-pointer swap method. Start from both ends of the array and swap the elements until the pointers meet.",
+                "code": "#include <stdio.h>\nint main() {\n  int arr[] = {1, 2, 3, 4, 5};\n  int start = 0, end = 4;\n  while(start < end) {\n    int temp = arr[start];\n    arr[start] = arr[end];\n    arr[end] = temp;\n    start++;\n    end--;\n  }\n  for(int i = 0; i < 5; i++) {\n    printf(\"%d \", arr[i]);\n  }\n  return 0;\n}",
+                "type": "Array"
+            },
+            {
+                "question": "Find the Maximum Element",
+                "difficulty": "Medium",
+                "algorithm": "Iterate through the array and keep track of the maximum value.",
+                "code": "#include <stdio.h>\nint main() {\n  int arr[] = {1, 2, 3, 4, 5};\n  int max = arr[0];\n  for(int i = 1; i < 5; i++) {\n    if(arr[i] > max) {\n      max = arr[i];\n    }\n  }\n  printf(\"Max Element: %d\", max);\n  return 0;\n}",
+                "type": "Array"
+            }
+        ]
+    },
+    "Java": {
+        "Strings": [
+            {
+                "question": "Reverse a String",
+                "difficulty": "Easy",
+                "algorithm": "Iterate through the string and swap characters from both ends.",
+                "code": "public class Main {\n  public static void main(String[] args) {\n    String str = \"hello\";\n    StringBuilder reversed = new StringBuilder(str).reverse();\n    System.out.println(reversed);\n  }\n}",
+                "type": "String"
+            },
+            {
+                "question": "Count the Vowels in a String",
+                "difficulty": "Medium",
+                "algorithm": "Iterate through each character of the string and check if it's a vowel.",
+                "code": "public class Main {\n  public static void main(String[] args) {\n    String str = \"hello\";\n    int count = 0;\n    for (int i = 0; i < str.length(); i++) {\n      char ch = str.charAt(i);\n      if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {\n        count++;\n      }\n    }\n    System.out.println(\"Vowel Count: \" + count);\n  }\n}",
+                "type": "String"
+            }
+        ]
+    }
+}
